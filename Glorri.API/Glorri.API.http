@@ -1,0 +1,6 @@
+@Glorri.API_HostAddress = http://localhost:5077
+
+GET {{Glorri.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
