@@ -1,8 +1,9 @@
-﻿namespace Glorri.API.Models
+﻿using Glorri.API.Models.BaseModels;
+
+namespace Glorri.API.Models
 {
-    public class Industry
+    public class Industry : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public ICollection<Company> Companies { get; set; }
     }

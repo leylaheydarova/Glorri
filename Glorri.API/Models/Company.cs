@@ -1,8 +1,9 @@
-﻿namespace Glorri.API.Models
+﻿using Glorri.API.Models.BaseModels;
+
+namespace Glorri.API.Models
 {
-    public class Company
+    public class Company : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Descriptino { get; set; }
         public DateOnly FoundationDate { get; set; }

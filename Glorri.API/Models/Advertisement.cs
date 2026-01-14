@@ -1,8 +1,9 @@
-﻿namespace Glorri.API.Models
+﻿using Glorri.API.Models.BaseModels;
+
+namespace Glorri.API.Models
 {
-    public class Advertisement
+    public class Advertisement : BaseEntity
     {
-        public int Id { get; set; }
         public string Description { get; set; }
         public string Requirement { get; set; }
         public DateTime EndDate { get; set; }
