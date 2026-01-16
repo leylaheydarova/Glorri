@@ -59,6 +59,11 @@ namespace Glorri.API.Repositories.Implements
             return entry.State == EntityState.Deleted;
         }
 
+        public async Task<int> SaveAsync()
+        {
+            return await _context.SaveChangesAsync();
+        }
+
         public bool Toggle(T entity)
         {
             entity.IsDeleted = !entity.IsDeleted;

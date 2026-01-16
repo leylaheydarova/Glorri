@@ -12,5 +12,6 @@ namespace Glorri.API.Repositories.Interfaces
         bool Update(T entity);
         IQueryable<T> GetAll(bool isTracking, params string[] includes);
         Task<T> GetByIdAsync(int id, bool isTracking, params string[] includes);
+        Task<int> SaveAsync();
     }
 }

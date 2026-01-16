@@ -1,13 +1,22 @@
 using Glorri.API.Contexts;
+using Glorri.API.Models;
+using Glorri.API.Repositories.Implements;
+using Glorri.API.Repositories.Interfaces;
+using Glorri.API.Services.Implements;
+using Glorri.API.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+//Repositories
+builder.Services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
+
+//Services
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
