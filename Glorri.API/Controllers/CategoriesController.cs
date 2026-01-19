@@ -29,11 +29,25 @@ namespace Glorri.API.Controllers
             return StatusCode(201, message);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetSingle([FromRoute] int id)
+        {
+            var dto = await _service.GetSingleAsync(id);
+            return StatusCode(200, dto);
+        }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Remove([FromRoute] int id)
         {
             var message = await _service.RemoveAsync(id);
             return StatusCode(204, message);
+        }
+
+        [HttpPatch("toggle/{id}")]
+        public async Task<IActionResult> Toggle([FromRoute] int id)
+        {
+            var message = await _service.ToggleAsync(id);
+            return StatusCode(200, message);
         }
 
         [HttpPatch("{id}")]

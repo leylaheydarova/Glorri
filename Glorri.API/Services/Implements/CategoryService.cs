@@ -31,13 +31,25 @@ namespace Glorri.API.Services.Implements
 
         public async Task<List<CategoryGetDto>> GetAllAsync()
         {
-            var query = _repository.GetAll(false);
+            var query = _repository.GetAllWhere(c => !c.IsDeleted, false);
             var dtos = await query.Select(category => new CategoryGetDto()
             {
                 Id = category.Id,
                 Name = category.Name,
             }).ToListAsync();
             return dtos;
+        }
+
+        public async Task<CategoryGetDto> GetSingleAsync(int id)
+        {
+            var category = await _repository.GetWhereAsync(c => c.Id == id && !c.IsDeleted, false);
+            if (category == null) throw new NotFoundException("category");
+            var dto = new CategoryGetDto()
+            {
+                Id = category.Id,
+                Name = category.Name,
+            };
+            return dto;
         }
 
         public async Task<string> RemoveAsync(int id)
@@ -49,9 +61,22 @@ namespace Glorri.API.Services.Implements
             return "Category was removed permanently!";
         }
 
-        public async Task<string> UpdateAsync(int id, CategoryUpdateDto dto)
+        public async Task<string> ToggleAsync(int id)
         {
             var category = await _repository.GetByIdAsync(id, true);
+            if (category == null) throw new NotFoundException("category");
+            var result = _repository.Toggle(category);
+            if (result) category.DeletedDate = DateTime.UtcNow.AddHours(4);
+            else if (!result) category.UpdatedDate = DateTime.UtcNow.AddHours(4);
+            await _repository.SaveAsync();
+            //if (result) return "Category was deleted temporarily!";
+            //else if (!result) return "Category was recovered successfully!";
+            return result ? "Category was deleted temporarily!" : "Category was recovered successfully!";
+        }
+
+        public async Task<string> UpdateAsync(int id, CategoryUpdateDto dto)
+        {
+            var category = await _repository.GetWhereAsync(c => c.Id == id && !c.IsDeleted, true);
             if (category == null) throw new NotFoundException("category");
 
             category.Name = dto.Name != null ? dto.Name : category.Name;

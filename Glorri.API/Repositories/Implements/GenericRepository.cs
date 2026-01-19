@@ -3,6 +3,7 @@ using Glorri.API.Models.BaseModels;
 using Glorri.API.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using System.Linq.Expressions;
 
 namespace Glorri.API.Repositories.Implements
 {
@@ -38,6 +39,20 @@ namespace Glorri.API.Repositories.Implements
             return query;
         }
 
+        public IQueryable<T> GetAllWhere(Expression<Func<T, bool>> predicate, bool isTracking, params string[] includes)
+        {
+            var query = Table.AsQueryable().Where(predicate);
+            if (!isTracking) query = query.AsNoTracking();
+            if (includes.Any())
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+            return query;
+        }
+
         public async Task<T> GetByIdAsync(int id, bool isTracking, params string[] includes)
         {
             var query = Table.AsQueryable();
@@ -50,6 +65,21 @@ namespace Glorri.API.Repositories.Implements
                 }
             }
             T entity = await query.FirstOrDefaultAsync(e => e.Id == id);
+            return entity;
+        }
+
+        public async Task<T> GetWhereAsync(Expression<Func<T, bool>> predicate, bool isTracking, params string[] includes)
+        {
+            var query = Table.AsQueryable();
+            if (!isTracking) query = query.AsNoTracking();
+            if (includes.Any())
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+            T entity = await query.FirstOrDefaultAsync(predicate);
             return entity;
         }
 

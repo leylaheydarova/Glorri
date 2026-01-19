@@ -8,5 +8,7 @@ namespace Glorri.API.Services.Interfaces
         Task<string> RemoveAsync(int id);
         Task<string> UpdateAsync(int id, CategoryUpdateDto dto);
         Task<List<CategoryGetDto>> GetAllAsync();
+        Task<CategoryGetDto> GetSingleAsync(int id);
+        Task<string> ToggleAsync(int id);
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Glorri.API.DTOs.Category
 {
-    public class CategoryUpdateDto
+    public record CategoryUpdateDto
     {
         public string? Name { get; set; }
     }
