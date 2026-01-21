@@ -1,6 +1,6 @@
 ﻿namespace Glorri.API.DTOs.Company
 {
-    public class CompanyGetDto
+    public record CompanyGetDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

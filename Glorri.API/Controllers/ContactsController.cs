@@ -1,4 +1,4 @@
-﻿using Glorri.API.DTOs.Industry;
+﻿using Glorri.API.DTOs.Contact;
 using Glorri.API.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,24 +6,24 @@ namespace Glorri.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class IndustriesController : ControllerBase
+    public class ContactsController : ControllerBase
     {
-        readonly IIndustryService _service;
+        readonly IContactService _service;
 
-        public IndustriesController(IIndustryService service)
+        public ContactsController(IContactService service)
         {
             _service = service;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAll()
         {
             var data = await _service.GetAllAsync();
             return StatusCode(200, data);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(IndustryCreateDto dto)
+        public async Task<IActionResult> Create(ContactCreateDto dto)
         {
             var message = await _service.CreateAsync(dto);
             return StatusCode(201, message);
@@ -32,8 +32,8 @@ namespace Glorri.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetSingle([FromRoute] int id)
         {
-            var dto = await _service.GetSingleAsync(id);
-            return StatusCode(200, dto);
+            var data = await _service.GetSingleAsync(id);
+            return StatusCode(200, data);
         }
 
         [HttpDelete("{id}")]
@@ -51,7 +51,7 @@ namespace Glorri.API.Controllers
         }
 
         [HttpPatch("{id}")]
-        public async Task<IActionResult> Update([FromRoute] int id, IndustryUpdateDto dto)
+        public async Task<IActionResult> Update([FromRoute] int id, ContactUpdateDto dto)
         {
             var message = await _service.UpdateAsync(id, dto);
             return StatusCode(200, message);

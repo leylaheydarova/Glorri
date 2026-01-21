@@ -42,7 +42,7 @@ namespace Glorri.API.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Descriptino")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -71,7 +71,7 @@ namespace Glorri.API.Migrations
 
                     b.HasIndex("CompanyId");
 
-                    b.ToTable("Advertisements");
+                    b.ToTable("Advertisements", (string)null);
                 });
 
             modelBuilder.Entity("Glorri.API.Models.Category", b =>
@@ -100,7 +100,7 @@ namespace Glorri.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("Glorri.API.Models.Company", b =>
@@ -152,7 +152,7 @@ namespace Glorri.API.Migrations
 
                     b.HasIndex("IndustryId");
 
-                    b.ToTable("Companies");
+                    b.ToTable("Companies", (string)null);
                 });
 
             modelBuilder.Entity("Glorri.API.Models.Contact", b =>
@@ -194,7 +194,7 @@ namespace Glorri.API.Migrations
 
                     b.HasIndex("CompanyId");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("Glorri.API.Models.Industry", b =>
@@ -223,7 +223,7 @@ namespace Glorri.API.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Industries");
+                    b.ToTable("Industries", (string)null);
                 });
 
             modelBuilder.Entity("Glorri.API.Models.Advertisement", b =>

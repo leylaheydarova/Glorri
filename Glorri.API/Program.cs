@@ -16,11 +16,15 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(builder.Configu
 builder.Services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
 builder.Services.AddScoped<IGenericRepository<Industry>, GenericRepository<Industry>>();
 builder.Services.AddScoped<IGenericRepository<Company>, GenericRepository<Company>>();
+builder.Services.AddScoped<IGenericRepository<Contact>, GenericRepository<Contact>>();
+builder.Services.AddScoped<IGenericRepository<Advertisement>, GenericRepository<Advertisement>>();
 
 //Services
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IIndustryService, IndustryService>();
 builder.Services.AddScoped<ICompanyService, CompanyService>();
+builder.Services.AddScoped<IContactService, ContactService>();
+builder.Services.AddScoped<IAdvertisementService, AdvertisementService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

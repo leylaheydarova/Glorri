@@ -39,7 +39,7 @@ namespace Glorri.API.Migrations
                     b.Property<int>("CompanyId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Descriptino")
                         .IsRequired()
                         .HasColumnType("text");
 

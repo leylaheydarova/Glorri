@@ -45,7 +45,7 @@ namespace Glorri.API.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("Description")
+                    b.Property<string>("Descriptino")
                         .IsRequired()
                         .HasColumnType("text");
 

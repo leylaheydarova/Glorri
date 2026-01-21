@@ -23,10 +23,17 @@ namespace Glorri.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CompanyCreateDto dto)
+        public async Task<IActionResult> Create([FromForm] CompanyCreateDto dto)
         {
             var message = await _service.CreateAsync(dto);
             return StatusCode(201, message);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetSingle([FromRoute] int id)
+        {
+            var data = await _service.GetSingleAsync(id);
+            return StatusCode(200, data);
         }
 
         [HttpDelete("{id}")]
@@ -34,6 +41,20 @@ namespace Glorri.API.Controllers
         {
             var message = await _service.RemoveAsync(id);
             return StatusCode(204, message);
+        }
+
+        [HttpPatch("toggle/{id}")]
+        public async Task<IActionResult> Toggle([FromRoute] int id)
+        {
+            var message = await _service.ToggleAsync(id);
+            return StatusCode(200, message);
+        }
+
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> Update([FromRoute] int id, [FromForm] CompanyUpdateDto dto)
+        {
+            var message = await _service.UpdateAsync(id, dto);
+            return StatusCode(200, message);
         }
     }
 }
