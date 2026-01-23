@@ -26,7 +26,7 @@ namespace Glorri.API.Services.Implements
             var company = new Company()
             {
                 Name = dto.Name,
-                Descriptino = dto.Description,
+                Description = dto.Description,
                 EmployeeCount = dto.EmployeeCount,
                 FoundationDate = dto.FoundationDate,
                 IndustryId = dto.IndustryId,
@@ -48,7 +48,7 @@ namespace Glorri.API.Services.Implements
             {
                 Id = company.Id,
                 Name = company.Name,
-                Description = company.Descriptino,
+                Description = company.Description,
                 EmployeeCount = company.EmployeeCount,
                 FoundationDate = company.FoundationDate,
                 ImageName = company.ImageName,
@@ -66,7 +66,7 @@ namespace Glorri.API.Services.Implements
             var dto = new CompanyGetDto()
             {
                 Id = company.Id,
-                Description = company.Descriptino,
+                Description = company.Description,
                 EmployeeCount = company.EmployeeCount,
                 FoundationDate = company.FoundationDate,
                 ImageName = company.ImageName,
@@ -106,7 +106,7 @@ namespace Glorri.API.Services.Implements
             if (company == null) throw new NotFoundException("company");
 
             company.Name = dto.Name != null ? dto.Name : company.Name;
-            company.Descriptino = dto.Description != null ? dto.Description : company.Descriptino;
+            company.Description = dto.Description != null ? dto.Description : company.Description;
             company.FoundationDate = dto.FoundationDate != null ? dto.FoundationDate.Value : company.FoundationDate;
             company.EmployeeCount = dto.EmployeeCount != null ? dto.EmployeeCount.Value : company.EmployeeCount;
             if (dto.Image != null)

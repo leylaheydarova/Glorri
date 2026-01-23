@@ -5,7 +5,7 @@ namespace Glorri.API.Models
     public class Company : BaseEntity
     {
         public string Name { get; set; }
-        public string Descriptino { get; set; }
+        public string Description { get; set; }
         public DateOnly FoundationDate { get; set; }
         public int EmployeeCount { get; set; }
         public string ImageName { get; set; }

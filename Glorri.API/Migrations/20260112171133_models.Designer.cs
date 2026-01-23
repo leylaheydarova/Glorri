@@ -39,7 +39,7 @@ namespace Glorri.API.Migrations
                     b.Property<int>("CompanyId")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Descriptino")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -90,7 +90,7 @@ namespace Glorri.API.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Descriptino")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
