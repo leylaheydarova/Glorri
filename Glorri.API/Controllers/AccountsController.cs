@@ -20,6 +20,7 @@ namespace Glorri.API.Controllers
         {
             var message = await _service.RegisterAsync(dto);
             return StatusCode(201, message);
+            //todo: email verification
         }
     }
 }
