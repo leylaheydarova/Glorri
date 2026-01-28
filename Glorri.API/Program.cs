@@ -6,6 +6,9 @@ using Glorri.API.Services.Implements;
 using Glorri.API.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +16,52 @@ builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddIdentity<AppUser, Role>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders(); //todo:add login options
+builder.Services.AddAuthentication()
+               .AddJwtBearer("Bearer", options =>
+               {
+                   options.TokenValidationParameters = new TokenValidationParameters
+                   {
+                       ValidateAudience = true,
+                       ValidateIssuer = true,
+                       ValidateIssuerSigningKey = true,
+                       ValidIssuer = builder.Configuration["Jwt:issuer"],
+                       ValidAudience = builder.Configuration["Jwt:audience"],
+                       IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]))
+                   };
+               });
+builder.Services.AddSwaggerGen(
+    c =>
+    {
+        c.SwaggerDoc("admin_v1", new OpenApiInfo { Title = "My API - admin_v1", Version = "admin_v1" });
+        c.SwaggerDoc("client_v1", new OpenApiInfo { Title = "My API - client_v1", Version = "client_v1" });
+
+        c.SwaggerDoc("v1", new OpenApiInfo
+        {
+            Title = "My API",
+            Version = "v1"
+        });
+        c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+        {
+            In = ParameterLocation.Header,
+            Description = "Please insert JWT with Bearer into field",
+            Name = "Authorization",
+            Type = SecuritySchemeType.ApiKey
+        });
+        c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+   {
+     new OpenApiSecurityScheme
+     {
+       Reference = new OpenApiReference
+       {
+         Type = ReferenceType.SecurityScheme,
+         Id = "Bearer"
+       }
+      },
+      new string[] { }
+    }
+  });
+    }
+    );
 
 //Repositories
 builder.Services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
@@ -40,7 +89,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "DendClub V1");
+        options.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
+        options.InjectStylesheet("/Assets/swagger-ui/SwaggerDark.css");
+    });
 }
 
 app.UseStaticFiles();

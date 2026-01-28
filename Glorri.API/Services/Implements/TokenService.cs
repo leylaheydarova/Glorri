@@ -3,6 +3,7 @@ using Glorri.API.Services.Interfaces;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace Glorri.API.Services.Implements
@@ -42,6 +43,14 @@ namespace Glorri.API.Services.Implements
 
             var handler = new JwtSecurityTokenHandler();
             return handler.WriteToken(token);
+        }
+
+        public string GenerateRefreshToken()
+        {
+            var randomNumber = new byte[64];
+            var random = RandomNumberGenerator.Create();
+            random.GetBytes(randomNumber);
+            return Convert.ToBase64String(randomNumber);
         }
     }
 }

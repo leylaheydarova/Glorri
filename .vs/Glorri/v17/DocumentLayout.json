@@ -3,26 +3,6 @@
   "WorkspaceRootPath": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\implements\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\implements\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\dtos\\auth\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\dtos\\auth\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,12 +15,60 @@
       "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\implements\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\implements\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\interfaces\\iaccoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\interfaces\\iaccoutservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\implements\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\implements\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\implements\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\dtos\\appuser\\appuserupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\dtos\\appuser\\appuserupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\dtos\\appuser\\appusergetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\dtos\\appuser\\appusergetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\exceptions\\loginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\exceptions\\loginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\exceptions\\refreshtokenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\exceptions\\refreshtokenexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\implements\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\implements\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\dtos\\auth\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\dtos\\auth\\tokendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\implements\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\implements\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,16 +79,8 @@
       "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\services\\implements\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\services\\implements\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\dtos\\appuser\\registgerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\dtos\\appuser\\registgerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|solutionrelative:glorri.api\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A507FD1F-DC16-42A2-821D-B1BFB21E1AB0}|Glorri.API\\Glorri.API.csproj|d:\\programming\\teaching\\codelank\\practices\\c#-01\\backend\\glorri\\glorri.api\\dtos\\role\\rolegetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,102 +122,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TokenDto.cs",
-              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\Auth\\TokenDto.cs",
-              "RelativeDocumentMoniker": "Glorri.API\\DTOs\\Auth\\TokenDto.cs",
-              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\Auth\\TokenDto.cs",
-              "RelativeToolTip": "Glorri.API\\DTOs\\Auth\\TokenDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T16:45:08.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\TokenService.cs",
-              "RelativeDocumentMoniker": "Glorri.API\\Services\\Implements\\TokenService.cs",
-              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\TokenService.cs",
-              "RelativeToolTip": "Glorri.API\\Services\\Implements\\TokenService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T16:16:49.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Program.cs",
-              "RelativeDocumentMoniker": "Glorri.API\\Program.cs",
-              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Program.cs",
-              "RelativeToolTip": "Glorri.API\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwCAAAAA6AAAAAAAAAA==",
+              "Title": "AppUserUpdateDto.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\AppUser\\AppUserUpdateDto.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\DTOs\\AppUser\\AppUserUpdateDto.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\AppUser\\AppUserUpdateDto.cs",
+              "RelativeToolTip": "Glorri.API\\DTOs\\AppUser\\AppUserUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:32:36.835Z",
+              "WhenOpened": "2026-01-28T16:41:40.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "IAccoutService.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\IAccoutService.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Services\\Interfaces\\IAccoutService.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\IAccoutService.cs",
+              "RelativeToolTip": "Glorri.API\\Services\\Interfaces\\IAccoutService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:15:25.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AuthService.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\AuthService.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Services\\Implements\\AuthService.cs",
               "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\AuthService.cs",
               "RelativeToolTip": "Glorri.API\\Services\\Implements\\AuthService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-25T15:51:17.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\AccountService.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Services\\Implements\\AccountService.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\AccountService.cs",
+              "RelativeToolTip": "Glorri.API\\Services\\Implements\\AccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T15:51:59.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AccountsController.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Controllers\\AccountsController.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Controllers\\AccountsController.cs",
               "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Controllers\\AccountsController.cs",
               "RelativeToolTip": "Glorri.API\\Controllers\\AccountsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-23T17:14:28.992Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Glorri.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Glorri.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Program.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Program.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Program.cs",
+              "RelativeToolTip": "Glorri.API\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwD8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T15:56:11.864Z",
+              "WhenOpened": "2026-01-23T16:32:36.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Glorri.API\\Services\\Interfaces\\IAuthService.cs",
-              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "Glorri.API\\Services\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T15:49:50.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\appsettings.json",
               "RelativeDocumentMoniker": "Glorri.API\\appsettings.json",
@@ -210,7 +217,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppUserGetDto.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\AppUser\\AppUserGetDto.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\DTOs\\AppUser\\AppUserGetDto.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\AppUser\\AppUserGetDto.cs",
+              "RelativeToolTip": "Glorri.API\\DTOs\\AppUser\\AppUserGetDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T17:13:47.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TokenDto.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\Auth\\TokenDto.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\DTOs\\Auth\\TokenDto.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\Auth\\TokenDto.cs",
+              "RelativeToolTip": "Glorri.API\\DTOs\\Auth\\TokenDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T16:45:08.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Models\\AppUser.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Models\\AppUser.cs",
+              "RelativeToolTip": "Glorri.API\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T15:58:59.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RefreshTokenException.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Exceptions\\RefreshTokenException.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Exceptions\\RefreshTokenException.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Exceptions\\RefreshTokenException.cs",
+              "RelativeToolTip": "Glorri.API\\Exceptions\\RefreshTokenException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:17:43.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginException.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Exceptions\\LoginException.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Exceptions\\LoginException.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Exceptions\\LoginException.cs",
+              "RelativeToolTip": "Glorri.API\\Exceptions\\LoginException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T16:19:00.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Services\\Interfaces\\ITokenService.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\ITokenService.cs",
+              "RelativeToolTip": "Glorri.API\\Services\\Interfaces\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T16:15:51.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Services\\Interfaces\\IAuthService.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "Glorri.API\\Services\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T15:49:50.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Glorri.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwBwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T15:56:11.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\TokenService.cs",
+              "RelativeDocumentMoniker": "Glorri.API\\Services\\Implements\\TokenService.cs",
+              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\TokenService.cs",
+              "RelativeToolTip": "Glorri.API\\Services\\Implements\\TokenService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAiwDMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T16:16:49.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "RoleService.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\RoleService.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Services\\Implements\\RoleService.cs",
@@ -218,25 +342,11 @@
               "RelativeToolTip": "Glorri.API\\Services\\Implements\\RoleService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T15:52:04.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T15:52:04.114Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ITokenService.cs",
-              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\ITokenService.cs",
-              "RelativeDocumentMoniker": "Glorri.API\\Services\\Interfaces\\ITokenService.cs",
-              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\ITokenService.cs",
-              "RelativeToolTip": "Glorri.API\\Services\\Interfaces\\ITokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T16:15:51.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\Auth\\LoginDto.cs",
               "RelativeDocumentMoniker": "Glorri.API\\DTOs\\Auth\\LoginDto.cs",
@@ -244,12 +354,11 @@
               "RelativeToolTip": "Glorri.API\\DTOs\\Auth\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T15:50:11.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T15:50:11.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "IAppUserService.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Interfaces\\IAppUserService.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Services\\Interfaces\\IAppUserService.cs",
@@ -257,12 +366,11 @@
               "RelativeToolTip": "Glorri.API\\Services\\Interfaces\\IAppUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:51:13.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T16:51:13.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "RegistgerDto.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\AppUser\\RegistgerDto.cs",
               "RelativeDocumentMoniker": "Glorri.API\\DTOs\\AppUser\\RegistgerDto.cs",
@@ -270,12 +378,11 @@
               "RelativeToolTip": "Glorri.API\\DTOs\\AppUser\\RegistgerDto.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:51:49.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T16:51:49.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "20260123170457_image.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Migrations\\20260123170457_image.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Migrations\\20260123170457_image.cs",
@@ -283,12 +390,11 @@
               "RelativeToolTip": "Glorri.API\\Migrations\\20260123170457_image.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAIwCIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T17:04:57.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T17:04:57.887Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Contexts\\AppDbContext.cs",
@@ -296,25 +402,11 @@
               "RelativeToolTip": "Glorri.API\\Contexts\\AppDbContext.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAYwA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:02:14.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T16:02:14.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\AccountService.cs",
-              "RelativeDocumentMoniker": "Glorri.API\\Services\\Implements\\AccountService.cs",
-              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Services\\Implements\\AccountService.cs",
-              "RelativeToolTip": "Glorri.API\\Services\\Implements\\AccountService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T15:51:59.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "RoleGetDto.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\Role\\RoleGetDto.cs",
               "RelativeDocumentMoniker": "Glorri.API\\DTOs\\Role\\RoleGetDto.cs",
@@ -322,25 +414,11 @@
               "RelativeToolTip": "Glorri.API\\DTOs\\Role\\RoleGetDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:44:17.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T16:44:17.34Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "Glorri.API\\Models\\AppUser.cs",
-              "ToolTip": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Models\\AppUser.cs",
-              "RelativeToolTip": "Glorri.API\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T15:58:59.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "RoleCreateDto.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\DTOs\\Role\\RoleCreateDto.cs",
               "RelativeDocumentMoniker": "Glorri.API\\DTOs\\Role\\RoleCreateDto.cs",
@@ -348,12 +426,11 @@
               "RelativeToolTip": "Glorri.API\\DTOs\\Role\\RoleCreateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:29:37.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T16:29:37.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "20260123160637_identity.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Migrations\\20260123160637_identity.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Migrations\\20260123160637_identity.cs",
@@ -361,12 +438,11 @@
               "RelativeToolTip": "Glorri.API\\Migrations\\20260123160637_identity.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAIwBMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:06:37.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T16:06:37.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "Company.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Models\\Company.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Models\\Company.cs",
@@ -374,12 +450,11 @@
               "RelativeToolTip": "Glorri.API\\Models\\Company.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:05:52.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T16:05:52.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "20260123160344_identity.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Migrations\\20260123160344_identity.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Migrations\\20260123160344_identity.cs",
@@ -390,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 26,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\Programming\\Teaching\\CodeLank\\Practices\\C#-01\\Backend\\Glorri\\Glorri.API\\Models\\Role.cs",
               "RelativeDocumentMoniker": "Glorri.API\\Models\\Role.cs",
@@ -398,8 +473,7 @@
               "RelativeToolTip": "Glorri.API\\Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T16:01:03.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-23T16:01:03.776Z"
             }
           ]
         }

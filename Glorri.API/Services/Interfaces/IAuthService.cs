@@ -5,5 +5,6 @@ namespace Glorri.API.Services.Interfaces
     public interface IAuthService
     {
         Task<TokenDto> LoginAsync(LoginDto dto);
+        Task Logout(string refreshToken);
     }
 }

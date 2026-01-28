@@ -8,5 +8,7 @@ namespace Glorri.API.Models
         public string LastName { get; set; }
         public string ImageName { get; set; }
         public string ImageUrl { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime? RefreshTokenExpireDate { get; set; }
     }
 }

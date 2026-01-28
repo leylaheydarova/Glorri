@@ -21,5 +21,12 @@ namespace Glorri.API.Controllers
             var token = await _service.LoginAsync(dto);
             return StatusCode(200, token);
         }
+
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout(string refreshToken)
+        {
+            await _service.Logout(refreshToken);
+            return Ok();
+        }
     }
 }
