@@ -15,7 +15,26 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
-builder.Services.AddIdentity<AppUser, Role>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders(); //todo:add login options
+
+builder.Services.AddIdentity<AppUser, Role>(options =>
+{
+    options.User.RequireUniqueEmail = true;
+
+    options.SignIn.RequireConfirmedEmail = true;
+    options.SignIn.RequireConfirmedPhoneNumber = false;
+
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequiredLength = 8;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireDigit = true;
+    options.Password.RequiredUniqueChars = 1;
+
+}).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders(); //todo:add login options
+
+
+
+
 builder.Services.AddAuthentication()
                .AddJwtBearer("Bearer", options =>
                {
@@ -29,6 +48,9 @@ builder.Services.AddAuthentication()
                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:key"]))
                    };
                });
+
+
+
 builder.Services.AddSwaggerGen(
     c =>
     {
@@ -63,6 +85,8 @@ builder.Services.AddSwaggerGen(
     }
     );
 
+builder.Services.Configure<EmailSetting>(builder.Configuration.GetSection("EmailSetting"));
+
 //Repositories
 builder.Services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
 builder.Services.AddScoped<IGenericRepository<Industry>, GenericRepository<Industry>>();
@@ -80,6 +104,7 @@ builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IAccoutService, AccountService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddSingleton<IEmailService, EmailService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

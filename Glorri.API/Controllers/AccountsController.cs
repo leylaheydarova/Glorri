@@ -51,5 +51,12 @@ namespace Glorri.API.Controllers
             var message = await _service.UpdateAsync(refreshToken, dto);
             return StatusCode(200, message);
         }
+
+        [HttpGet("verify-email")]
+        public async Task<IActionResult> VerifyEmail(string userId, string token)
+        {
+            await _service.VerifyEmail(userId, token);
+            return Ok("Your email verfied!");
+        }
     }
 }

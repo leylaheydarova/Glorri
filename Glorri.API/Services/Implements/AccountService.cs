@@ -4,7 +4,9 @@ using Glorri.API.Extensions;
 using Glorri.API.Models;
 using Glorri.API.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.EntityFrameworkCore;
+using System.Text;
 
 namespace Glorri.API.Services.Implements
 {
@@ -13,11 +15,13 @@ namespace Glorri.API.Services.Implements
         readonly UserManager<AppUser> _userManager;
         readonly IWebHostEnvironment _environment;
         readonly IHttpContextAccessor _accessor;
-        public AccountService(UserManager<AppUser> userManager, IWebHostEnvironment environment, IHttpContextAccessor accessor)
+        readonly IEmailService _emailService;
+        public AccountService(UserManager<AppUser> userManager, IWebHostEnvironment environment, IHttpContextAccessor accessor, IEmailService emailService)
         {
             _userManager = userManager;
             _environment = environment;
             _accessor = accessor;
+            _emailService = emailService;
         }
 
         public async Task<string> RegisterAsync(RegistgerDto dto)
@@ -49,8 +53,30 @@ namespace Glorri.API.Services.Implements
             var result = await _userManager.CreateAsync(user, dto.Password);
             if (!result.Succeeded) throw new Exception("Register failed!");
 
+            var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+            var encoded = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
+
+            var link = $"{_accessor.HttpContext.Request.Scheme}://{_accessor.HttpContext.Request.Host}/api/Accounts/verify-email?userId={user.Id}&token={encoded}";
+
             await _userManager.AddToRoleAsync(user, "Client");
+            var messageBody = $@"
+<h3>Welcome 🎉</h3>
+<p>Please verify your email:</p>
+<a href=""{link}"">Verify Email</a>
+";
+            await _emailService.SendEmailAsync(user.Email, "Verify Account", messageBody);
+
             return $"{user.UserName} registered successsfully!";
+        }
+
+
+        public async Task VerifyEmail(string userId, string token)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user == null) throw new NotFoundException("user");
+            var decodedToken = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(token));
+            var result = await _userManager.ConfirmEmailAsync(user, decodedToken.ToString());
+
         }
 
         public async Task<string> RemoveAccountAsync(string refreshToken)
