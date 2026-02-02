@@ -25,8 +25,22 @@ namespace Glorri.API.Controllers
         [HttpPost("logout")]
         public async Task<IActionResult> Logout(string refreshToken)
         {
-            await _service.Logout(refreshToken);
+            await _service.LogoutAsync(refreshToken);
             return Ok();
+        }
+
+        [HttpGet("forgot-password")]
+        public async Task<IActionResult> ForgotPassword(string username)
+        {
+            await _service.ForgotPasswordAsync(username);
+            return Ok();
+        }
+
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromForm] ForgetPasswordDto dto)
+        {
+            var message = await _service.ResetPasswordAsync(dto);
+            return Ok(message);
         }
     }
 }

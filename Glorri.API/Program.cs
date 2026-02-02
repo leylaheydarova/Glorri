@@ -1,4 +1,5 @@
 using Glorri.API.Contexts;
+using Glorri.API.CustomMiddlewares;
 using Glorri.API.Models;
 using Glorri.API.Repositories.Implements;
 using Glorri.API.Repositories.Interfaces;
@@ -6,6 +7,7 @@ using Glorri.API.Services.Implements;
 using Glorri.API.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
@@ -105,6 +107,8 @@ builder.Services.AddScoped<IAccoutService, AccountService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddSingleton<IEmailService, EmailService>();
+builder.Services.AddScoped<IOtpService, OtpService>();
+builder.Services.AddSingleton<IMemoryCache, MemoryCache>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -121,6 +125,8 @@ if (app.Environment.IsDevelopment())
         options.InjectStylesheet("/Assets/swagger-ui/SwaggerDark.css");
     });
 }
+
+app.UseMiddleware<GlobalExceptionHandler>();
 
 app.UseStaticFiles();
 
